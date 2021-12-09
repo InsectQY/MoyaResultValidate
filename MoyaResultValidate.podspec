@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MoyaResultValidate'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'Validate Moya Result'
 
   s.description      = <<-DESC
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
   
   s.ios.deployment_target = '10.0'
-  s.dependency "Moya", "~> 14.0"
+  s.dependency "Moya", "~> 15.0"
   s.source_files = 'MoyaResultValidate/Classes/**/*'
   
 end
