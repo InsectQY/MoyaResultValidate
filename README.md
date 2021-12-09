@@ -14,8 +14,8 @@ JSON returned by the server.
 ```json
 {
   "code": 2000,
-	"msg": "success",
-	"data": ...
+  "msg": "success",
+  "data": ...
 }
 ```
 
