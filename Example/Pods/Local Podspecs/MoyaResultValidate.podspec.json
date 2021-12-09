@@ -1,0 +1,29 @@
+{
+  "name": "MoyaResultValidate",
+  "version": "0.1.0",
+  "summary": "A short description of MoyaResultValidate.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/insect/MoyaResultValidate",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "insect": "704861917@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/insect/MoyaResultValidate.git",
+    "tag": "0.1.0"
+  },
+  "swift_versions": "5.0",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "dependencies": {
+    "Moya": [
+
+    ]
+  },
+  "source_files": "MoyaResultValidate/Classes/**/*",
+  "swift_version": "5.0"
+}
