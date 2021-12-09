@@ -9,7 +9,7 @@ import Moya
 
 /// Moya.Result 校验插件，处理 Result<Moya.Response, MoyaError> 类型的返回结果
 /// 必须实现 TargetType & CustomMoyaResultable 两个 protocol
-public struct MoyaResultValidatePlugin: PluginType {
+public final class MoyaResultValidatePlugin: PluginType {
     public func process(_ result: Result<Moya.Response, MoyaError>,
                         target: TargetType) -> Result<Moya.Response, MoyaError> {
         guard
@@ -26,7 +26,7 @@ public struct MoyaResultValidatePlugin: PluginType {
                 return result
             }
             // 返回默认错误
-            return .failure(.underlying(ValidateError(), response))
+            return .failure(.underlying(ValidateError(response: response), response))
         case .failure:
             return result
         }
@@ -38,10 +38,6 @@ public struct MoyaResultValidatePlugin: PluginType {
         }
         return target as? MoyaResultValidateable
     }
-}
-
-public struct ValidateError: LocalizedError {
-    public var errorDescription: String? {
-        "Moya.Result validate failure"
-    }
+    
+    public init() {}
 }

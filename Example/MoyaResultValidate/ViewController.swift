@@ -7,18 +7,23 @@
 //
 
 import UIKit
+import Moya
+import MoyaResultValidate
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let provider = MoyaProvider<RequestApi>(plugins: [MoyaResultValidatePlugin()])
+        provider.request(.baidu) { result in
+            switch result {
+            case let .success(response):
+                break
+            case let .failure(error):
+                error.asValidateError
+            }
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 

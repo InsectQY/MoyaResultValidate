@@ -22,6 +22,6 @@ public protocol MoyaResultValidateable {
 public extension MoyaResultValidateable {
 
     func isResultSuccess(response: Moya.Response) -> Bool {
-        true
+        return true
     }
 }

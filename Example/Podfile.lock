@@ -1,13 +1,11 @@
 PODS:
-  - Alamofire (4.9.1)
-  - Moya (13.0.1):
-    - Moya/Core (= 13.0.1)
-  - Moya/Core (13.0.1):
-    - Alamofire (~> 4.1)
-    - Result (~> 4.1)
+  - Alamofire (5.4.4)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
   - MoyaResultValidate (0.1.0):
     - Moya
-  - Result (4.1.0)
 
 DEPENDENCIES:
   - MoyaResultValidate (from `../`)
@@ -16,18 +14,16 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - Moya
-    - Result
 
 EXTERNAL SOURCES:
   MoyaResultValidate:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
-  MoyaResultValidate: e3f23a13510d508080108c7ea551d4b7196d165b
-  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  MoyaResultValidate: 60a57505338ed24ef63b8f8bf1c57e836e798ead
 
-PODFILE CHECKSUM: 863f37d9f7d4778cc0425f16156eff4a2d2ce640
+PODFILE CHECKSUM: 28112f12fbd69d05348d151a5c03a59bc3ea2b8c
 
 COCOAPODS: 1.11.2
