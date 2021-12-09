@@ -25,7 +25,7 @@ Validate the JSON  or XML or other type results. It seems not elegant.
 provider.request(.baidu) { result in
     switch result {
     case let .success(response):
-				if response["code"] == 2000 {
+	if response["code"] == 2000 {
           /// success code
         } else {
           /// error code
