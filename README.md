@@ -63,7 +63,7 @@ extension RequestApi: MoyaResultValidateable {
 
 Then it will work.Your request will look like this.
 
-The ` Result.success(response)`  that does not match isResultSuccess will be transferred to `Result.Failure`.
+The ` Result.success(response)`  that does not match `isResultSuccess` will be transferred to `Result.Failure`.
 
 You can use `error.asValidateError` to get `Moya.Response`.
 
